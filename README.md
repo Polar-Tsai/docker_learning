@@ -1,8 +1,30 @@
 # docker_learning
 [教學簡報](https://www.canva.com/design/DAFDEWeuvlg/g-t9sqDc-06a6h5def2UVg/edit?utm_content=DAFDEWeuvlg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+# My Docker Hub
+https://hub.docker.com/repository/registry-1.docker.io/polar1244/chinatimes_webcrawler/general
 
-# 常見的docker 指令
+
+# 技術分享的 docker 指令
+1. 從雲端下載 docker image
+`docker image pull polar1244/chinatimes_webcrawler:v4`
+
+2. 運行剛剛下載的 image
+`docker run polar1244/chinatimes_webcrawler:v1`
+
+3. 利用volume與OS串接資料
+`docker image run --name c012 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v4`
+
+4. 查看 image 清單
+`docker image ls`
+`docker images`
+
+5. 刪除image
+docker rmi -f 
+
+`docker run --name c003 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v2`
+
+# 常見的 docker 指令
 ### image上的建立、上傳與刪除
 
 在地端建立與使用docker image
@@ -64,3 +86,9 @@ docker container stop (container ID) #停止container執行
 docker container rm (container id) #刪除container
 docker container ls -a #檢查所有container 
 ```
+
+### Dockerfile建立
+`docker image build --tag <docker image name> .`
+更改image名稱
+`docker tag <IMAGE ID> <USER ID/DOCKER NAME>`
+
