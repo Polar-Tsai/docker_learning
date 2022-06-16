@@ -22,7 +22,7 @@ https://labs.play-with-docker.com/
 
 3. 利用volume與OS串接資料
 
-`docker image run -name c012 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v4`
+`docker run -name c012 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v4`
 
 4. 在cmd查看文件
 
