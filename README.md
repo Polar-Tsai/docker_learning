@@ -5,7 +5,8 @@
 
 https://hub.docker.com/repository/registry-1.docker.io/polar1244/chinatimes_webcrawler/general
 
-# 線上的測試環境 謝謝Jason大大找到的資源
+# 線上的測試環境 
+謝謝Jason大大找到的資源
 
 https://labs.play-with-docker.com/
 
@@ -103,6 +104,7 @@ docker container ls -a #檢查所有container
 ### Dockerfile建立
 
 `docker image build --tag <docker image name> .`
+
 更改image名稱
 
 `docker tag <IMAGE ID> <USER ID/DOCKER NAME>`
