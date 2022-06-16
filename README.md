@@ -18,14 +18,17 @@ https://hub.docker.com/repository/registry-1.docker.io/polar1244/chinatimes_webc
 
 `docker image run -name c012 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v4`
 
-4. 查看 image 清單
+4. 在cmd查看文件
+`cat 2022-06-16.csv`
+
+5. 查看 image 清單
 
 `docker image ls`
 `docker images`
 
-5. 刪除image
+6. 刪除image
 
-`docker rmi -f` 
+`docker rmi <IMAGE ID>` 
 
 
 # 常見的 docker 指令
@@ -45,7 +48,7 @@ docker push account/imagename #上傳指定image
 ```
 清理本地檔案
 ```
-docker rmi -f(強制執行，不管是不是正在container使用) account/imagesname
+docker rmi -f(強制執行，不管是不是正在container使用) <IMAGE ID>
 ```
 
 
