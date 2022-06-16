@@ -1,8 +1,13 @@
 # docker_learning
-[教學簡報](https://www.canva.com/design/DAFDEWeuvlg/g-t9sqDc-06a6h5def2UVg/edit?utm_content=DAFDEWeuvlg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[教學簡報](https://www.canva.com/design/DAFDEWeuvlg/omFE2zdIRsJC5Oq8keFXVw/view?utm_content=DAFDEWeuvlg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 # My Docker Hub
+
 https://hub.docker.com/repository/registry-1.docker.io/polar1244/chinatimes_webcrawler/general
+
+# 線上的測試環境 謝謝Jason大大找到的資源
+
+https://labs.play-with-docker.com/
 
 
 # 技術分享的 docker 指令
@@ -19,6 +24,7 @@ https://hub.docker.com/repository/registry-1.docker.io/polar1244/chinatimes_webc
 `docker image run -name c012 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v4`
 
 4. 在cmd查看文件
+
 `cat 2022-06-16.csv`
 
 5. 查看 image 清單
@@ -95,7 +101,9 @@ docker container ls -a #檢查所有container
 ```
 
 ### Dockerfile建立
+
 `docker image build --tag <docker image name> .`
 更改image名稱
+
 `docker tag <IMAGE ID> <USER ID/DOCKER NAME>`
 
