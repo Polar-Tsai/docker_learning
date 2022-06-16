@@ -7,22 +7,26 @@ https://hub.docker.com/repository/registry-1.docker.io/polar1244/chinatimes_webc
 
 # 技術分享的 docker 指令
 1. 從雲端下載 docker image
+
 `docker image pull polar1244/chinatimes_webcrawler:v4`
 
 2. 運行剛剛下載的 image
-`docker run polar1244/chinatimes_webcrawler:v1`
+
+`docker run polar1244/chinatimes_webcrawler:v4`
 
 3. 利用volume與OS串接資料
-`docker image run --name c012 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v4`
+
+`docker image run -name c012 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v4`
 
 4. 查看 image 清單
+
 `docker image ls`
 `docker images`
 
 5. 刪除image
-docker rmi -f 
 
-`docker run --name c003 -v ~/docker_volume:/docker_test/data polar1244/chinatimes_webcrawler:v2`
+`docker rmi -f` 
+
 
 # 常見的 docker 指令
 ### image上的建立、上傳與刪除
